@@ -9,7 +9,7 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Main />} />
-        <Route exact path="/repos" element={<Repos />} />
+        <Route exact path="/repos/:repositorio" element={<Repos />} />
       </Routes>
     </BrowserRouter>
   );
