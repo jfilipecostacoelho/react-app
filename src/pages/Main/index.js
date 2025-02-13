@@ -23,12 +23,13 @@ export default function Main(){
                 }
 
                 setRepositorios([...repositorios, data]);
-                setNewRepo('');
             }catch(error){
                 console.log(error);
             }finally{
                 setLoading(false);
             }
+
+            setNewRepo('');
         }
 
         submit();
